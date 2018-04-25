@@ -1,0 +1,9 @@
+version: '3'
+services:
+  calico-dash:
+    build:
+      dockerfile: Dockerfile.prod
+      context: .
+    env_file:
+      - secrets
+
